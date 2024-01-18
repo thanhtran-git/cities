@@ -39,9 +39,7 @@ function Cities() {
         <List>
           {cities.map((city) => (
             <ListItem key={city.id}>
-              <StyledLink href={`/cities/${city.slug}`} passHref>
-                {city.name}
-              </StyledLink>
+              <StyledLink href={`/cities/${city.slug}`}>{city.name}</StyledLink>
             </ListItem>
           ))}
         </List>

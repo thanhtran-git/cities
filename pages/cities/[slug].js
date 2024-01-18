@@ -44,9 +44,7 @@ export default function City() {
 
   return (
     <Card>
-      <Link href="/cities" passHref>
-        Back
-      </Link>
+      <Link href="/cities">Back</Link>
       <Title>{city.name}</Title>
       <Paragraph>Country: {city.country}</Paragraph>
       <Paragraph>Description: {city.description}</Paragraph>

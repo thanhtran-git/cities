@@ -1,5 +1,3 @@
-// components/Cities.js
-
 import { cities } from "@/lib/data";
 import styled from "styled-components";
 

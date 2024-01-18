@@ -1,5 +1,3 @@
-// components/City.js
-
 import { useRouter } from "next/router";
 import { cities } from "@/lib/data";
 import Image from "next/image";

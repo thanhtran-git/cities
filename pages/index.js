@@ -1,6 +1,3 @@
-// components/HomePage.js
-
-import Link from "next/link";
 import styled from "styled-components";
 
 const Card = styled.div`

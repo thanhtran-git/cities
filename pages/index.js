@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { imgUrl } from "@/lib/frontImage";
 
 const Card = styled.div`
   max-width: 450px;
@@ -31,12 +32,7 @@ function HomePage() {
     <Card>
       <Title>Cities App</Title>
       <StyledLink href="/cities">Show Cities</StyledLink>
-      <Image
-        src="https://images.unsplash.com/photo-1535051188811-c841ac77c80b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="cities"
-        width={320}
-        height={450}
-      />
+      <Image src={imgUrl} alt="cities" width={320} height={450} />
     </Card>
   );
 }

@@ -25,12 +25,14 @@ const StyledLink = styled.a`
 
 function HomePage() {
   return (
-    <Card>
-      <Title>Cities App</Title>
-      <Link href="/cities" passHref>
-        <StyledLink>Cities</StyledLink>
-      </Link>
-    </Card>
+    <>
+      <Card>
+        <Title>Cities App</Title>
+        <Link href="/cities" passHref>
+          <StyledLink>Cities</StyledLink>
+        </Link>
+      </Card>
+    </>
   );
 }
 

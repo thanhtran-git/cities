@@ -19,7 +19,6 @@ const Title = styled.h1`
 
 const List = styled.ul`
   list-style: none;
-
 `;
 
 const ListItem = styled.li`
@@ -34,18 +33,20 @@ const StyledLink = styled.a`
 
 function Cities() {
   return (
-    <Card>
-      <Title>Cities</Title>
-      <List>
-        {cities.map((city) => (
-          <ListItem key={city.id}>
-            <Link href={`/cities/${city.slug}`} passHref>
-              <StyledLink>{city.name}</StyledLink>
-            </Link>
-          </ListItem>
-        ))}
-      </List>
-    </Card>
+    <>
+      <Card>
+        <Title>Cities</Title>
+        <List>
+          {cities.map((city) => (
+            <ListItem key={city.id}>
+              <Link href={`/cities/${city.slug}`} passHref>
+                <StyledLink>{city.name}</StyledLink>
+              </Link>
+            </ListItem>
+          ))}
+        </List>
+      </Card>
+    </>
   );
 }
 

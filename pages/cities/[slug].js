@@ -4,7 +4,8 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const Card = styled.div`
-  max-width: 600px;
+  max-width: 450px;
+  height: 600px;
   margin: 100px auto;
   padding: 20px;
   border-radius: 8px;

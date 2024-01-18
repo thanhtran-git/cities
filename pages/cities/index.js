@@ -2,7 +2,8 @@ import { cities } from "@/lib/data";
 import styled from "styled-components";
 
 const Card = styled.div`
-  max-width: 400px;
+  max-width: 450px;
+  height: 600px;
   margin: 100px auto;
   padding: 20px;
   border-radius: 8px;
@@ -11,7 +12,7 @@ const Card = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
 const List = styled.ul`
@@ -23,8 +24,8 @@ const ListItem = styled.li`
 `;
 
 const StyledLink = styled.a`
-  /* display: block; */
   color: #0070f3;
+  font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   &:hover {
@@ -34,6 +35,7 @@ const StyledLink = styled.a`
 
 const HomeLink = styled.a`
   display: block;
+
   color: #0070f3;
   text-align: left;
   text-decoration: none;

@@ -27,6 +27,9 @@ const StyledLink = styled.a`
   color: #0070f3;
   text-decoration: none;
   font-weight: bold;
+  &: hover {
+    text-decoration: underline;
+  }
 `;
 
 function Cities() {

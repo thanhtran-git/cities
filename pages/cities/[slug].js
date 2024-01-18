@@ -15,14 +15,6 @@ const Card = styled.div`
   text-align: center;
 `;
 
-const BackLink = styled.a`
-  display: block;
-  margin-bottom: 20px;
-  color: #0070f3;
-  text-decoration: none;
-  font-weight: bold;
-`;
-
 const Title = styled.h1`
   margin-bottom: 10px;
 `;
@@ -53,7 +45,7 @@ export default function City() {
   return (
     <Card>
       <Link href="/cities" passHref>
-        <BackLink>Back</BackLink>
+        Back
       </Link>
       <Title>{city.name}</Title>
       <Paragraph>Country: {city.country}</Paragraph>

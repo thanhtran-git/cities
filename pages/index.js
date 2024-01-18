@@ -28,9 +28,9 @@ function HomePage() {
     <>
       <Card>
         <Title>Cities App</Title>
-        <Link href="/cities" passHref>
-          <StyledLink>Cities</StyledLink>
-        </Link>
+        <StyledLink href="/cities" passHref>
+          Cities
+        </StyledLink>
       </Card>
     </>
   );

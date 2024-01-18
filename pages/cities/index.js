@@ -1,5 +1,4 @@
 import { cities } from "@/lib/data";
-import Link from "next/link";
 import styled from "styled-components";
 
 const Card = styled.div`
@@ -7,7 +6,7 @@ const Card = styled.div`
   margin: 100px auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
 `;
 
@@ -24,10 +23,22 @@ const ListItem = styled.li`
 `;
 
 const StyledLink = styled.a`
+  /* display: block; */
   color: #0070f3;
   text-decoration: none;
   font-weight: bold;
-  &: hover {
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const HomeLink = styled.a`
+  display: block;
+  color: #0070f3;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
     text-decoration: underline;
   }
 `;
@@ -35,7 +46,7 @@ const StyledLink = styled.a`
 function Cities() {
   return (
     <Card>
-      <Link href="/">Home</Link>
+      <HomeLink href="/">Home</HomeLink>
       <Title>Cities</Title>
       <List>
         {cities.map((city) => (

@@ -5,7 +5,7 @@ const Card = styled.div`
   margin: 100px auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
 `;
 
@@ -18,19 +18,17 @@ const StyledLink = styled.a`
   color: #0070f3;
   text-decoration: none;
   font-weight: bold;
-  &: hover {
+  &:hover {
     text-decoration: underline;
   }
 `;
 
 function HomePage() {
   return (
-    <>
-      <Card>
-        <Title>Cities App</Title>
-        <StyledLink href="/cities">Cities</StyledLink>
-      </Card>
-    </>
+    <Card>
+      <Title>Cities App</Title>
+      <StyledLink href="/cities">Show Cities</StyledLink>
+    </Card>
   );
 }
 

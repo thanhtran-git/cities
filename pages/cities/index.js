@@ -2,7 +2,6 @@
 
 import { cities } from "@/lib/data";
 import styled from "styled-components";
-import Link from "next/link";
 
 const Card = styled.div`
   max-width: 400px;
@@ -47,5 +46,4 @@ function Cities() {
     </>
   );
 }
-
 export default Cities;
